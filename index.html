@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./normalize.css" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <img src="./avatar.png" alt="avatar" class="header__avatar" />
+      <h1 class="header__title">Алексей Венчаков</h1>
+      <h3 class="header__subtitle">QA student</h3>
+      <footer>
+        <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кот в алерте</title>
+    <style>
+        /* Стили для модального окна */
+        #customAlert {
+            display: none; /* Скрыто по умолчанию */
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            text-align: center;
+        }
+
+        /* Затемнение фона */
+        #overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+    </style>
+</head>
+<body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кот в алерте</title>
+    <style>
+        /* Стили для модального окна */
+        #customAlert {
+            display: none; /* Скрыто по умолчанию */
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            text-align: center;
+        }
+
+        /* Затемнение фона */
+        #overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+    </style>
+</head>
+<body>
+    <button id="myButton" button type = "button" class="button-link" href=""> Тык </button>
+    <!-- Модальное окно -->
+    <div id="overlay"></div>
+    <div id="customAlert">
+        <p>Тыгыдык!</p>
+        <img src="cat.gif" alt="Гифка с котом" style="width: 400px; height: auto;">
+        <br>
+        <button onclick="closeAlert()">Закрыть</button>
+    </div>
+
+    <script>
+        const button = document.querySelector('#myButton');
+        const customAlert = document.querySelector('#customAlert');
+        const overlay = document.querySelector('#overlay');
+
+        // Функция для показа кастомного алерта
+        function showAlert() {
+            customAlert.style.display = 'block';
+            overlay.style.display = 'block';
+        }
+
+        // Функция для закрытия кастомного алерта
+        function closeAlert() {
+            customAlert.style.display = 'none';
+            overlay.style.display = 'none';
+        }
+
+        // Вешаем обработчик на кнопку
+        button.addEventListener('click', showAlert);
+    </script>
+</body>
+</html>
+    </footer>
+    </header>
+    <main>
+      <section class="links">
+        <h2 class="links__header">Связаться</h2>
+        <ul class="links__container">
+          <li class="links__link">
+            <p class="links__title">Телеграм</p>
+            <a class="linsk__link" href="https://t.me/Venchakov_Alexey">@Venchakov_Alexey</a>
+          </li>
+          <li class="links__link">
+            <p class="links__title">Эл. почта</p>
+            <a class="linsk__link" href="mailto:venchakov2012@yandex.ru"
+              >venchakov2012@yandex.ru</a
+            >
+          </li>
+          <li class="links__link">
+            <p class="links__title">Вконтакте</p>
+            <a class="linsk__link" href="https://vk.com/ebabelno69"
+              >Венчаков Алексей</a
+            >
+          </li>
+          <li class="links__link">
+            <p class="links__title">Гит</p>
+            <a class="linsk__link" href="https://github.com/ebabelno/">github.com/ebabelno/</a>
+          </li>
+        </ul>
+      </section>
+      <section class="links">
+        <h2 class="links__headers">Чем занимаюсь вечером</h2>
+        <ul class="links__container">
+          <li class="links__link">
+            <p class="links__title">Ученик</p>
+            <a class="linsk__link" href="https://qa.studio/">QA Studio</a>
+          </li>
+          <li class="links__link">
+            <p class="links__title">Работаю</p>
+            <a class="linsk__link" href="">На работе</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+     <img src="./gif1.gif" alt="гифка" class="header__gif" />
+    <script type="text/javascript" src="js.js"></script>
+  </body>
+</html>
